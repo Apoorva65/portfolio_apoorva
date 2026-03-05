@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import profilePic from '../assets/profile/profile.jpeg'
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
 import React from "react";
 
 function Home(){
@@ -17,6 +19,9 @@ function Home(){
                     experience building real world React applications involving state management, CRUD operations, authentication, and
                     role based workflows. Passionate about writing clean, maintainable code and continuously improving problem solving
                     skills.</Typography>
+                    <Button variant="outlined" sx={{mt:2,mr:2,borderRadius:"16px"}}>Resume</Button>
+                    <Button variant="outlined" sx={{mt:2, mr:2,borderRadius:"16px"}}>Github</Button>
+                    <Button variant="outlined" sx={{mt:2,mr:2,borderRadius:"16px"}}>LinkedIn</Button>
                 </Grid>
 
                 <Grid size={{sm:12, md:6}}>
@@ -29,14 +34,13 @@ function Home(){
                         objectFit: "cover",
                         display: "block",
                         margin: "auto",
-                        pl:3
                         }}
                         alt="Apoorva"
                         src={profilePic}
                     />
                 </Grid>
             </Grid>
-        </Container>
+            </Container>
     )
 }
 

@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import Container from '@mui/material/Container'
 import { Routes,Route } from 'react-router'
 import Experience from './pages/Experience'
+import Skills from './pages/Skills'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
         <Route element={<MainLayout/>}>
           <Route path='/' element={<Home/>}/>
           <Route path='/experience' element={<Experience/>}/>
+          <Route path='/skills' element={<Skills/>}/>
         </Route>
       </Routes>
   )
