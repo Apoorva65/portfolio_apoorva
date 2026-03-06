@@ -71,7 +71,7 @@ function Contact(){
                                 </Typography>
 
                                 <Typography textAlign="center">
-                                    linkedin.com/in/apoorva
+                                    linkedin.com/in/apoorva-dixit-0b6698217/
                                 </Typography>
                                 </Box>
 
@@ -101,7 +101,7 @@ function Contact(){
                                 </Typography>
 
                                 <Typography textAlign="center">
-                                    github.com/apoorva
+                                    github.com/apoorva65
                                 </Typography>
                                 </Box>
 
