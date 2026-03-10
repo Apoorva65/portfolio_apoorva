@@ -23,22 +23,58 @@ function Home(){
                     <Typography variant="h5" sx={{ mt: 1 }}>Software Developer</Typography>
                     <Typography sx={{mt:1}}>I'm an Electronics and Communication engineer currently transitioning into software development. I enjoy solving problems, building web applications, and learning how different technologies work together to create real products.</Typography>
                     <Typography sx={{mt:1}}>Outside of tech, I enjoy reading books, learning new things, and exploring ideas that help me grow personally. I believe in continuous learning, curiosity, and building things that are both useful and meaningful.</Typography>
-                    <Stack direction="row" spacing={3} sx={{m:2}}><TbBrandCpp size={25}/> <FaHtml5 size={25}/> <FaCss3Alt size={25}/> <IoLogoJavascript size={25}/> <FaReact size={25}/> <SiRedux size={25}/> <FaFire size={20}/> <SiTailwindcss size={25}/> <SiMui size={25}/> <FaGitAlt size={25}/> <FaGithub size={25}/> <IoLogoVercel size={25}/> <FaNpm size={25}/></Stack>
-                    <Button variant="outlined" sx={{mt:2,mr:2,borderRadius:"16px"}}
+                    <Box
+                        sx={{
+                            display: "grid",
+                            gridTemplateColumns: {
+                            xs: "repeat(4, 1fr)",
+                            sm: "repeat(6, 1fr)",
+                            md: "repeat(8, 1fr)",
+                            lg: "repeat(12, 1fr)"
+                            },
+                            gap: 3,
+                            maxWidth: 700,
+                            mt: 4,
+                            "& svg": {
+                            fontSize: 26,
+                            justifySelf: "center",
+                            opacity: 0.8,
+                            transition: "0.2s"
+                            },
+                            "& svg:hover": {
+                            transform: "scale(1.15)",
+                            opacity: 1
+                            }
+                        }}
+                        >
+                        <TbBrandCpp />
+                        <FaHtml5 />
+                        <FaCss3Alt />
+                        <IoLogoJavascript />
+                        <FaReact />
+                        <SiRedux />
+                        <FaFire />
+                        <SiTailwindcss />
+                        <SiMui />
+                        <FaGitAlt />
+                        <FaGithub />
+                        <IoLogoVercel />
+                    </Box>
+                    <Button variant="outlined" sx={{mt:5,mr:2,borderRadius:"16px"}}
                     component="a"
                     href="/Resume_Apoorva.pdf"
                     target="_blank"
                     rel="noopener noreferrer">
                         <DownloadIcon sx={{mr:0.5}}/>Resume
                     </Button>
-                    <Button variant="outlined" sx={{mt:2, mr:2,borderRadius:"16px"}}
+                    <Button variant="outlined" sx={{mt:5, mr:2,borderRadius:"16px"}}
                     component="a"
                     href="https://github.com/Apoorva65"
                     target="_blank"
                     rel="noopener noreferrer">
                         <GitHubIcon />
                     </Button>
-                    <Button variant="outlined" sx={{mt:2,mr:2,borderRadius:"16px"}}
+                    <Button variant="outlined" sx={{mt:5,mr:2,borderRadius:"16px"}}
                     component="a"
                     href="https://www.linkedin.com/in/apoorva-dixit-0b6698217/"
                     target="_blank"
