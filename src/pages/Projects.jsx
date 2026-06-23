@@ -4,9 +4,10 @@ import { Container, Typography, Stack, Box, Button, Divider } from "@mui/materia
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LaunchIcon from "@mui/icons-material/Launch";
 
-import { FaReact, FaFire, FaCss3Alt } from "react-icons/fa";
-import { SiRedux, SiTailwindcss } from "react-icons/si";
+import { FaReact, FaFire, FaCss3Alt, FaNodeJs } from "react-icons/fa";
+import { SiRedux, SiTailwindcss, SiExpress, SiSqlite, SiMui } from "react-icons/si";
 import { IoLogoVercel, IoLogoJavascript } from "react-icons/io5";
+import Icon from '@mui/material/Icon';
 
 function Projects() {
 
@@ -44,17 +45,17 @@ function Projects() {
           href={github}
           target="_blank"
         >
-          Code
+          GitHub
         </Button>
 
-        <Button
+        {live && (<Button
           startIcon={<LaunchIcon/>}
           component="a"
           href={live}
           target="_blank"
         >
           Live Demo
-        </Button>
+        </Button>)}
       </Stack>
 
       <Divider sx={{mt:6}}/>
@@ -79,6 +80,44 @@ function Projects() {
         Projects that demonstrate my problem-solving skills and experience with modern web technologies.
       </Typography>
 
+      <Project
+        title="Quillo"
+        description="Quillo is a full stack blogging application built with React, Node.js, Express, and SQLite. It features JWT-based authentication and protected routes, allowing users to securely create, view, edit, and delete their own blog posts. The application supports rich text content creation and optional cover image uploads, with post data stored persistently in the database."
+        github="https://github.com/Apoorva65/quillo"
+      >
+        <FaReact size={22}/>
+        <FaNodeJs size={22}/>
+        <SiExpress size={22}/>
+        <SiSqlite size={22}/>
+        <SiMui size={22}/>
+        <IoLogoVercel size={22}/>
+      </Project>
+
+      <Project
+        title="NoteNest"
+        description="NoteNest is a full stack notes application built with React, Node.js, Express, and SQLite. It allows users to create, view, edit, and delete notes with data stored persistently in a SQLite database."
+        github="https://github.com/Apoorva65/NoteNest"
+      >
+        <FaReact size={22}/>
+        <FaNodeJs size={22}/>
+        <SiExpress size={22}/>
+        <SiSqlite size={22}/>
+        <SiTailwindcss size={22}/>
+        <IoLogoVercel size={22}/>
+      </Project>
+
+      <Project
+        title="Habio"
+        description="Habio is a full stack habit tracker built with React, Material UI, Node.js, Express, and SQLite. Users can create habits, mark daily completion, track streaks, and view a simple 7 day heatmap of progress."
+        github="https://github.com/Apoorva65/habio"
+      >
+        <FaReact size={22}/>
+        <FaNodeJs size={22}/>
+        <SiExpress size={22}/>
+        <SiSqlite size={22}/>
+        <SiMui size={22}/>
+        <IoLogoVercel size={22}/>
+      </Project>
 
       <Project
         title="Syncro"
@@ -94,7 +133,7 @@ function Projects() {
         <IoLogoVercel size={22}/>
       </Project>
 
-      <Project
+      {/* <Project
         title="NoteNest"
         description="NoteNest is an offline-first notes application built with React that supports creating, editing, searching, and deleting notes with automatic saving, using React Router for navigation and LocalStorage for persistent storage."
         github="https://github.com/Apoorva65/NoteNest"
@@ -104,7 +143,7 @@ function Projects() {
         <FaReact size={22}/>
         <SiTailwindcss size={22}/>
         <IoLogoVercel size={22}/>
-      </Project>
+      </Project> */}
 
 
       <Project

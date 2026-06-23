@@ -22,13 +22,13 @@ function Experience(){
                     <TimelineConnector />
                     </TimelineSeparator>
                     <TimelineContent>
-                        <Typography variant="h6" fontWeight="bold">Software Development Transition</Typography>
-                        <Typography variant="subtitle2" fontWeight="bold">Self-Directed Learning & Project Development </Typography>
+                        <Typography variant="h6" fontWeight="bold">Software Developer</Typography>
+                        <Typography variant="subtitle2" fontWeight="bold">Independent Projects</Typography>
                         <Typography variant="subtitle2" fontWeight="bold" sx={{mb:1}}>March 2025 - Present</Typography>
                             <ul>
-                                <li>Transitioning into software development with focused preparation for Software Development Engineer roles.</li>
-                                <li>Building strong problem solving skills using Data Structures and Algorithms in C++.</li>
-                                <li>Designing and building React based applications with features such as state management, routing, and CRUD workflows.</li>
+                                <li>Built and shipped multiple full stack applications with React frontends and Node.js/Express backends, integrating SQLite and Firebase for persistent data storage.</li>
+                                <li>Developed strong foundations in Data Structures and Algorithms in C++, with consistent problem solving practice.</li>
+                                <li>Designed and architected projects independently from data modeling to UI simulating real engineering ownership.</li>
                                 <li>Actively improving code quality, application structure, and debugging skills through project based learning.</li>
                             </ul>
                     </TimelineContent>

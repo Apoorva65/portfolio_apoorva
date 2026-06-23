@@ -9,9 +9,9 @@ import GitHubIcon from "@mui/icons-material/GitHub"
 import LinkedInIcon from "@mui/icons-material/LinkedIn"
 import DownloadIcon from "@mui/icons-material/Download"
 import React from "react";
-import { FaHtml5,FaCss3Alt,FaReact,FaGitAlt,FaGithub,FaNpm,FaFire } from "react-icons/fa";
+import { FaHtml5,FaCss3Alt,FaReact,FaGitAlt,FaGithub,FaNpm,FaFire,FaNodeJs } from "react-icons/fa";
 import { IoLogoJavascript,IoLogoVercel } from "react-icons/io5";
-import { SiTailwindcss,SiRedux,SiMui } from "react-icons/si";
+import { SiTailwindcss,SiRedux,SiMui,SiExpress, SiSqlite,SiPostman } from "react-icons/si";
 import { TbBrandCpp } from "react-icons/tb";
 
 function Home(){
@@ -53,16 +53,20 @@ function Home(){
                         <IoLogoJavascript />
                         <FaReact />
                         <SiRedux />
+                        <FaNodeJs />
+                        <SiExpress/>
+                        <SiSqlite />
                         <FaFire />
                         <SiTailwindcss />
                         <SiMui />
+                        <SiPostman />
                         <FaGitAlt />
                         <FaGithub />
                         <IoLogoVercel />
                     </Box>
                     <Button variant="outlined" sx={{mt:5,mr:2,borderRadius:"16px"}}
                     component="a"
-                    href="/Resume_Apoorva.pdf"
+                    href="/Apoorva_Dixit.pdf"
                     target="_blank"
                     rel="noopener noreferrer">
                         <DownloadIcon sx={{mr:0.5}}/>Resume
